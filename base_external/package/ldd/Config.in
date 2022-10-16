@@ -1,0 +1,5 @@
+config BR2_PACKAGE_LDD
+	bool "LDD"
+	depends on BR2_LINUX_KERNEL
+	help
+		Includes ldd modules and scull components

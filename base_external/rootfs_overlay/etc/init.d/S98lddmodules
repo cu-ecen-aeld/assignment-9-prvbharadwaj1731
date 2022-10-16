@@ -1,0 +1,32 @@
+#!/bin/sh
+
+#Check input arguments to see if only one is provided
+if [ ! $# -eq 1 ]
+then
+	echo "Incorrect number of arguments. Exiting..."
+	echo "Use as so: $0 start/stop"
+	exit -1
+fi
+
+
+case "$1" in
+	start)
+		echo "Install LDD modules"
+		/usr/bin/scull_load
+		/usr/bin/module_load faulty
+		modprobe hello
+		;;
+		
+	stop)
+		echo "Uninstall LDD modules"
+		/usr/bin/scull_unload
+		/usr/bin/module_unload faulty
+		rmmod hello
+		;;
+	*)
+		echo "Default. Incorrect argument passed. Use as follows: $0 start/stop"		
+	exit -1
+	
+esac
+
+exit 0
