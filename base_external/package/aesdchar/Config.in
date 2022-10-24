@@ -1,0 +1,5 @@
+config BR2_PACKAGE_AESDCHAR
+	bool "AESDCHAR"
+	depends on BR2_LINUX_KERNEL
+	help
+		Includes LKM char device

@@ -11,16 +11,18 @@ fi
 
 case "$1" in
 	start)
-		echo "Install LDD modules"
+		echo "Install LDD modules and aesdchar modules"
 		/usr/bin/scull_load
 		/usr/bin/module_load faulty
+		/usr/bin/aesdchar_load
 		modprobe hello
 		;;
 		
 	stop)
-		echo "Uninstall LDD modules"
+		echo "Uninstall LDD modules and aesdchar modules"
 		/usr/bin/scull_unload
 		/usr/bin/module_unload faulty
+		/usr/bin/aesdchar_unload
 		rmmod hello
 		;;
 	*)
