@@ -1,6 +1,6 @@
 #Assignment 7 makefile
 #Author: Pranav Bharadwaj
-LDD_VERSION = '7e63794b13f6b0b3ee2289225753f56b07b655cd'
+LDD_VERSION = '71158cb114efc092ee3c93bc78605d9ec428bc4b'
 
 LDD_SITE = 'git@github.com:cu-ecen-aeld/assignment-7-prvbharadwaj1731.git'
 LDD_SITE_METHOD = git
