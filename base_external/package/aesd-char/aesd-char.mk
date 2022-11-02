@@ -1,5 +1,5 @@
 #Author: Pranav Bharadwaj
-AESD_CHAR_VERSION = '92598627539f15367bbc6f0bde574e33cc342295'
+AESD_CHAR_VERSION = '56bf710c24d1456012d664a0f74eaa4692a8a522'
 
 AESD_CHAR_SITE = 'git@github.com:cu-ecen-aeld/assignments-3-and-later-prvbharadwaj1731.git'
 AESD_CHAR_SITE_METHOD = git
