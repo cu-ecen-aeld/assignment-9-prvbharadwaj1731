@@ -7,7 +7,7 @@
 
 #TODO: Fill up the contents below in order to reference your assignment 3 git contents
 #AESD_ASSIGNMENTS_VERSION = '#COMMIT VERSION NUMBER'
-AESD_ASSIGNMENTS_VERSION = '71158cb114efc092ee3c93bc78605d9ec428bc4b'
+AESD_ASSIGNMENTS_VERSION = '92598627539f15367bbc6f0bde574e33cc342295'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -37,5 +37,5 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 
 endef
 
-$(eval $(kernel-module))
+#$(eval $(kernel-module))
 $(eval $(generic-package))
